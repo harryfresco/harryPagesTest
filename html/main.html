@@ -1,64 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-     <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/styles.css">
     <script src="../js/script.js"></script>
     <title>HELP</title>
 </head>
+
 <body>
 
 
     <div class="container centreClass">
-        <div class="row ">
-            <div class="col-md-6">  
-                <div class="row">
-                    <h1 class="bigButton"onclick="location.href='';">
-                        ello
-                    </h1>   
-                </div>        
-            <div class="row" style="padding:10px; text-align: center;">
-                 <p>this is just a test to see if I can centre everything nicely</p>
 
-            </div>
-            </div>
-            <div class="col-md-6">
-                    <div class="row">
-                        <h1 class="bigButton"onclick="location.href='';">
-                            ello
-                        </h1>   
-                    </div>
-                <div class="row" style="padding:10px; text-align: center;">
-                    <p>i think its all good but <span id="nameOutput">Harry</span> is nicer</p>      
-                </div>
-            </div>
-        </div>
         <div class="row justify-content-center">
             <div class="col-12" style="text-align: center;">
-                <img src="../img/dad.jpg" style="width: 300px; padding-top: 20px;">
-            </div>
-            
-        </div>
-            <div class="row justify-content-center">
-                <div class="col-12" style="text-align: center;">
+                <form name="getNameForm" style="padding:10px">
+                    <input type="text" id="word1" name="word1" placeholder="Enter phrase 1">
+                    <input type="text" id="word2" name="word2" placeholder="Enter phrase 2">
+                    <input type="button" value="Submit" onclick="getMeme();">
 
-                    <form name="getNameForm" style="padding:10px">
-                        <input type="text" id="nameInput" name="nameInput" placeholder="Who is this?">
-                        <input type="button" value="Submit" onclick="getName();">
-                
-                    </form>
-                </div>
-            
+                </form>
+            </div>
+
+
+
         </div>
+        <div class="row justify-content-center">
+            <div class="col-12" id="meme" style="text-align: center;">
+
+            </div>
+
+        </div>
+
     </div>
 
-       
+
 
 
 
 </body>
+
 </html>
