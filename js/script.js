@@ -1,10 +1,10 @@
 function getMeme() {
   let word1 = document.forms["getNameForm"]["word1"].value;
   let word2 = document.forms["getNameForm"]["word2"].value;
-  makeMeme(word1, word2).then(resp=>{ document.getElementById("meme").innerHTML = "<img src="+resp.data.url+">"})
-
+  makeMeme(word1, word2).then(resp=>{ document.getElementById("meme").innerHTML = "<img src="+resp.data.url+" height=500px>"})
 
 }
+
 
 const username = "hazzafresh";
 const password = "Fresco1!";
@@ -24,7 +24,7 @@ async function readAll() {
     // Choose memeid
     let randMeme = json.data.memes[randIndex].id;
 
-  console.log(randMeme)
+  //console.log(randMeme)
   return randMeme;
 }
 
@@ -32,10 +32,10 @@ async function readAll() {
  async function makeMeme(word1, word2) {
  let id = await readAll()
 
-  console.log(id)
+  //console.log(id)
   let bodyVar = "username=" + username + "&password=" + password + "&template_id=" + id + "&text0=" + word1 + "&text1=" + word2;
 
-  console.log(bodyVar)
+  //console.log(bodyVar)
   const response = fetch("https://api.imgflip.com/caption_image", {
     method: 'POST',
     headers: {
@@ -47,7 +47,7 @@ async function readAll() {
 
   }).then(response => response.json())
   .then(data => {return data});
-console.log(await response)
+//console.log(await response)
 
   return await response
 }
@@ -58,6 +58,7 @@ async function makeRandomMeme(){
   let word2 = await randomWord()
 
    makeMeme(word1, word2).then(resp=>{ document.getElementById("meme").innerHTML = "<img src="+resp.data.url+">"})
+   document.getElementById("clear").innerHTML = "<button onClick='clear()'>Clear</button>"
 
 }
 // Get a random word
