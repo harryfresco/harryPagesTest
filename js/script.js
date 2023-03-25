@@ -52,26 +52,25 @@ console.log(await response)
   return await response
 }
 
+async function makeRandomMeme(){
 
+  let word1 = await randomWord()
+  let word2 = await randomWord()
+
+   makeMeme(word1, word2).then(resp=>{ document.getElementById("meme").innerHTML = "<img src="+resp.data.url+">"})
+
+}
 // Get a random word
-function randomWord(){
-    fetch('https://random-word-api.herokuapp.com/word')
-  .then(
-    function(response) {
-      if (response.status !== 200) {
-        console.log('Looks like there was a problem. Status Code: ' +
-          response.status);
-        return;
-      }
+async function randomWord(){
 
-      // Send response to random ID Function
-      response.json().then(function(data) {     
-        return data[0];  
-      });
-    }
-  )
-  .catch(function(err) {
+  const resp = await fetch(`https://random-word-api.herokuapp.com/word`);
+  const json = await resp.json();
+ 
+    let word = json[0];
 
-    console.log('Fetch Error :-S', err);
-  });
+  return word;
+
+
+
+    
 }
