@@ -1,7 +1,7 @@
 function getMeme() {
   let word1 = document.forms["getNameForm"]["word1"].value;
   let word2 = document.forms["getNameForm"]["word2"].value;
-  makeMeme(word1, word2).then(resp=>{ document.getElementById("meme").innerHTML = "<img src="+resp.data.url+" height=500px>"})
+  makeMeme(word1, word2).then(resp=>{ document.getElementById("meme").innerHTML = "<img src="+resp.data.url+" height=50%>"})
 
 }
 
@@ -57,8 +57,8 @@ async function makeRandomMeme(){
   let word1 = await randomWord()
   let word2 = await randomWord()
 
-   makeMeme(word1, word2).then(resp=>{ document.getElementById("meme").innerHTML = "<img src="+resp.data.url+">"})
-   document.getElementById("clear").innerHTML = "<button onClick='clear()'>Clear</button>"
+   makeMeme(word1, word2).then(resp=>{ document.getElementById("meme").innerHTML = "<img src="+resp.data.url+"  height=50%> "})
+   //document.getElementById("clear").innerHTML = "<button onClick='clear()'>Clear</button>"
 
 }
 // Get a random word
