@@ -1,9 +1,81 @@
-body{
-    background-color:rgb(248, 237, 225);
+.galleryTitle{
+    font-family: 'Roboto', sans-serif; font-weight: 200; color:rgb(68, 68, 68); font-size: 25pt;
+    text-align: right;
+    text-decoration: none;
+    transition: color 0.20s ease-in-out;
+}
+.galleryDesc{
+    font-family: 'Roboto', sans-serif; font-weight: 100; color:rgb(141, 141, 141); font-size: 15pt;
+    text-align: right;
+    text-decoration: none;
+    transition: color 0.20s ease-in-out;
+}
+.navbarText{
+    font-family: 'Roboto', sans-serif; font-weight: 100; color:rgb(160, 160, 160); font-size: 20pt;
+    text-decoration: none;
+    transition: color 0.20s ease-in-out;
+}
+.navbarText:hover{
+    color:rgb(211, 211, 211);
+}
+.backgroundImage {   
+     opacity: 1;
+    display: block;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: opacity 0.25s ease-in-out;
+    backface-visibility: hidden;
 }
 
+.centreText{
+    position: absolute;
+    left:50%;
+    margin-right:-50%;
+    transform: translate(0,-50%);
+}
 
-.bigButton {
+.centreClass{
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-right:-50%;
+    transform: translate(-50%, -50%);
+}
+
+.frontCTA{
+    font-family: 'Roboto', sans-serif; font-weight: 100; color: white; font-size: 30pt;
+    text-decoration: none;
+}
+/* unvisited link */
+.frontCTA:link {
+    text-decoration: none;
+}
+
+/* visited link */
+.frontCTA:visited {
+        text-decoration: none;
+}
+
+/* mouse over link */
+.frontCTA:hover {
+  color: hotpink;
+  cursor: pointer;
+    text-decoration: none; 
+}
+
+/* selected link */
+.frontCTA:active {
+  color: blue;
+      text-decoration: none;
+}
+
+/* .bigButton {
     font-family:helvetica;
     border-radius: 10px;
     padding-right:50px;
@@ -26,12 +98,4 @@ body{
 .bigButton{
     color: black;
     text-decoration: none;
-}
-
-.centreClass{
-    position: absolute;
-    top:50%;
-    left:50%;
-    margin-right:-50%;
-    transform: translate(-50%, -50%);
-}
+} */
