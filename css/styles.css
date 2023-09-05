@@ -44,10 +44,10 @@
     backface-visibility: hidden;
     
 }
-@media (max-width: 768px) {
+@media (max-width: 667px) {
     .backgroundImage {
         height: 100vh; /* Adjust the width for smaller screens */
-        width: 100vh;
+        width: 200vw;
         top:50%;
         object-fit: cover;
         transform: translate(-50%, -50%);
