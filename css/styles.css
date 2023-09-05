@@ -99,14 +99,14 @@
 
 /* mouse over link */
 .frontCTA:hover {
-  color: hotpink;
+  color: rgb(241, 168, 206);
   cursor: pointer;
     text-decoration: none; 
 }
 
 /* selected link */
 .frontCTA:active {
-  color: blue;
+  color: rgb(208, 176, 176);
       text-decoration: none;
 }
 
