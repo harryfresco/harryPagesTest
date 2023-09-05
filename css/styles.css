@@ -18,21 +18,59 @@
 .navbarText:hover{
     color:rgb(211, 211, 211);
 }
+
+.footerText{
+    font-family: 'Roboto', sans-serif; font-weight: 100; color:rgb(160, 160, 160); font-size: 15pt;
+    text-decoration: none;
+    transition: color 0.20s ease-in-out;
+    position: absolute;
+    bottom: 0;
+            left: 0;
+            right: 0;
+    padding: 10px;
+}
+.footerText:hover{
+    color:rgb(211, 211, 211);
+}
 .backgroundImage {   
      opacity: 1;
     display: block;
     position: absolute;
     margin-left: auto;
     margin-right: auto;
-    height: 100%;
+    height: auto;
     top:0;
     bottom: 0;
     left: 0;
     right: 0;
     transition: opacity 0.25s ease-in-out;
     backface-visibility: hidden;
+    
+}
+@media (max-width: 768px) {
+    .backgroundImage {
+        height: 100vh; /* Adjust the width for smaller screens */
+        width: 100vh;
+        top:50%;
+        object-fit: cover;
+        transform: translate(-50%, -50%);
+    }
 }
 
+@media (min-width: 769px) and (max-width: 1200px) {
+    .backgroundImage {
+        width: 100%; /* Adjust the width for medium-sized screens */
+        top:50%;
+        transform: translate(0, -50%);
+    }
+}
+
+@media (min-width: 1201px) {
+    .backgroundImage {
+        max-width: 100%; /* Adjust the width for larger screens */
+        
+    }
+}
 .centreText{
     position: absolute;
     left:50%;
@@ -75,6 +113,9 @@
       text-decoration: none;
 }
 
+p{
+    font-family: 'Roboto', sans-serif; font-weight: 300; color: rgb(84, 84, 84); font-size: 13pt;
+}
 /* .bigButton {
     font-family:helvetica;
     border-radius: 10px;
