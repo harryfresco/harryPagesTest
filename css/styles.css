@@ -19,12 +19,37 @@
     color:rgb(211, 211, 211);
 }
 
-.footerText{
+.footer{
     font-family: 'Roboto', sans-serif; font-weight: 100; color:rgb(160, 160, 160); font-size: 15pt;
     text-decoration: none;
     transition: color 0.20s ease-in-out;
-    position: absolute;
+    position: fixed;
+    bottom: 0;
     padding: 10px;
+    left:0;
+    right: 0;
+
+}
+.footerRight{
+    font-family: 'Roboto', sans-serif; font-weight: 100; color:rgb(160, 160, 160); font-size: 15pt;
+    text-decoration: none;
+    transition: color 0.20s ease-in-out;
+    position: fixed;
+    bottom: 0;
+    padding: 10px;
+    left:100;
+    right: 0;
+}
+
+.footerLeft{
+    font-family: 'Roboto', sans-serif; font-weight: 100; color:rgb(160, 160, 160); font-size: 15pt;
+    text-decoration: none;
+    transition: color 0.20s ease-in-out;
+    position: fixed;
+    bottom: 0;
+    padding: 10px;
+    left:0;
+    right: 100;
 }
 .footerText:hover{
     color:rgb(211, 211, 211);
