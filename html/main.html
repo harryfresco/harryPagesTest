@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../css/styles.css">
     <script src="../js/script.js"></script>
     <title>Harry Fresco</title>
-
+    <meta name="description" content="Just a collection of my pictures taken on 35mm film">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RYGYQDTQZY"></script>
 <script>
@@ -27,7 +27,7 @@
 </head>
 
 <body>
-
+<!-- meta, image compression (webp) -->
 <!--     <div id="nav-placeholder">
 
     </div>
@@ -42,51 +42,28 @@
             const image = document.querySelector('.backgroundImage');
             image.style.opacity = opacity;
         }
+
+        let x = 0;
+        window.addEventListener('scroll', (event) => {
+            x += 1;
+            console.log(x);
+            changeImageOpacity(x/1000);
+            if(x>= 9){
+                window.location.replace("../html/may23.html");
+            }
+        });
     </script>
     <div class="container">
 
-    <img src="../img/35mm/June 2022/042480010015.jpg" class="backgroundImage">
+    <img src="../img/35mm/June 2022/042480010015.jpg" class="backgroundImage" alt="Black and White London Underground background image">
 
         <div class="row  centreClass">
             <div class="col-12" style="text-align: center;">
                 <a href="may23.html"class="frontCTA" onmouseover="changeImageOpacity(0.5)" onmouseout="changeImageOpacity(1)">my 35mm photos</a>
+                
             </div>
         </div>
 
-<!--         <div class="row justify-content-center">
-            <div class="col-sm-auto" style="text-align: center;">
-                <div class="card" style="width: 18rem;">
-                    <img src="../img/brian.png" class="card-img-top" alt="..." height="300px">
-                    <div class="card-body">
-                        <h5 class="card-title">Meme Generator</h5>
-                        <p class="card-text">Takes 2 words and makes a random meme with them.</p>
-                        <a href="memeGen.html" class="btn btn-primary">Go to MemeGen</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-auto" style="text-align: center;">
-                <div class="card" style="width: 18rem;">
-                    <img src="../img/aled.png" class="card-img-top" alt="..." height="300px">
-                    <div class="card-body">
-                        <h5 class="card-title">Age Guesser</h5>
-                        <p class="card-text">This attempts to guess your age based on your name</p>
-                        <a href="memeGen.html" class="btn btn-primary">Go to Age Guesser</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-auto" style="text-align: center;">
-                <div class="card" style="width: 18rem;">
-                    <img src="../img/jackie.png" class="card-img-top" alt="..." height="300px">
-                    <div class="card-body">
-                        <h5 class="card-title">It's a date!</h5>
-                        <p class="card-text">See what happened on a day</p>
-                        <a href="date.html" class="btn btn-primary">Go to date</a>
-                    </div>
-                </div>
-            </div>
-        </div> -->
 
       
 
