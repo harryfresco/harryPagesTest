@@ -122,6 +122,10 @@
     position: absolute;
 
 }
+#musicText{
+    font-style: italic;
+
+}
 .centreClass{
     position: absolute;
     top:50%;
