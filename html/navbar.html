@@ -1,4 +1,14 @@
+<script>
+  function showMusic() {
 
+      let music = document.getElementById('music');
+      music.play();
+      music.style.display="block";
+      let musicText = document.getElementById('musicText');
+      musicText.style.display="none";
+  }
+
+</script>
 
 <div class="container text-center">
 
@@ -21,8 +31,18 @@
     <div class="col-3 " style="text-align: center;">
       <a class="navbarText rainbowText" href="aug23.html">aug '23</a>
     </div>
+</div><br>
+<div class = "row">
+  <div class="col-3-md">
+      <p id="musicText" onclick="showMusic()">and God said, "let there be music..."</p>
+      <audio controls autoplay id="music" class="musicText" style="display: none;">
+          <source src="../media/gallery.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio>
+  </div>
+
 </div>
 
-
 </div>
+
 <br>

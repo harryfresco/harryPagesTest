@@ -18,7 +18,13 @@
 .navbarText:hover{
     color:rgb(211, 211, 211);
 }
-
+#musicText{
+    cursor: pointer;
+    transition: color 0.20s ease-in-out;
+}
+#musicText:hover{
+    color:rgb(211, 211, 211);
+}
 .footer{
     /* background-color: rgb(231, 231, 231); */
     font-family: 'Roboto', sans-serif; font-weight: 100; color:rgb(160, 160, 160); font-size: 15pt;
@@ -112,7 +118,12 @@
     margin-right:-50%;
     transform: translate(0,-50%);
 }
-
+.musicText{
+    position: absolute;
+    left:50%;
+    margin-right:-50%;
+    transform: translate(-50%,0%);
+}
 .centreClass{
     position: absolute;
     top:50%;
@@ -120,7 +131,13 @@
     margin-right:-50%;
     transform: translate(-50%, -50%);
 }
-
+.centreMusic{
+    position: absolute;
+    padding-top: 50px;
+    left:50%;
+    margin-right:-50%;
+    transform: translate(-50%, -50%);
+}
 .frontCTA{
     font-family: 'Roboto', sans-serif; font-weight: 100; color: white; font-size: 30pt;
     text-decoration: none;
