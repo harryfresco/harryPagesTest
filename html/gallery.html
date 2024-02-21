@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/icon.ico" />
+    <script src="../js/script.js"></script>
+    <title>Harry Fresco - Gallery</title>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RYGYQDTQZY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RYGYQDTQZY');
+</script>
+</head>
+
+<body>
+
+ <div id="nav-placeholder">
+
+    </div>
+      
+    <script>
+  
+        $("#nav-placeholder").load("navbar.html");
+     
+    </script>
+    <script>
+        function changeImageOpacity(opacity, column) {
+            
+            let image = document.getElementsByClassName(column);
+            var imageIdList = new Array();
+
+            for (var i = 0, n = image.length; i < n; ++i) {
+                var el = image[i];
+                el.style.opacity = opacity;
+                
+            }
+            
+        }
+
+    </script>
+    <div class="container">
+
+
+
+            <div class="rowGallery">
+                <div class="columnGallery">
+                    <a onmouseover="changeImageOpacity(0.5, 'row3')" onmouseout="changeImageOpacity(1, 'row3')" href="june22.html">
+
+                    <img src="../img/35mm/June 2022/June22c/042480010015.webp" class="row3 imageHover" alt="underground">
+                    <img src="../img/35mm/June 2022/June22c/042480010036.webp" class="row3 imageHover" alt="B&W BBC Television Centre">
+                    <img src="../img/35mm/June 2022/June22c/042480010028.webp" class="row3 imageHover" alt="B&W of me playing piano with a silly hat">
+                    <img src="../img/35mm/June 2022/June22c/042480010009.webp" class="row3 imageHover" alt="B&W of a fake panda in Leicester Sq">
+                    <img src="../img/35mm/June 2022/June22c/042480010014.webp" class="row3 imageHover" alt="B&W of London underground">
+                    <img src="../img/35mm/June 2022/June22c/042480010037.webp" class="row3 imageHover" alt="B&W of BBC television centre">
+                    <img src="../img/35mm/June 2022/June22c/042480010012~2.webp" class="row3 imageHover" alt="B&W of Leicester Square">
+                </a>
+                </div>
+                <div class="columnGallery">
+                    <a onmouseover="changeImageOpacity(0.5, 'row2')" onmouseout="changeImageOpacity(1, 'row2')" href="jan23.html">
+                    
+                    <img src="../img/35mm/Jan 2023/Jan23c/img0000.webp" class="row2 imageHover" alt="Battersea Park statues">
+                    <img src="../img/35mm/Jan 2023/Jan23c/img0005.webp" class="row2 imageHover" alt="Battersea Power Station">
+                    <img src="../img/35mm/Jan 2023/Jan23c/img0002.webp" class="row2 imageHover" alt="Family picture in Spitalfields Market">
+                    <img src="../img/35mm/Jan 2023/Jan23c/img0018.webp" class="row2 imageHover" alt="Night picture of Buckhurt Hill">
+                    <img src="../img/35mm/Jan 2023/Jan23c/img0008.webp" class="row2 imageHover" alt="Battersea Power Station through leaves">
+                    <img src="../img/35mm/Jan 2023/Jan23c/img0035.webp" class="row2 imageHover" alt="Building in White City">
+                </a>
+                </div>
+                <div class="columnGallery">
+                    <a onmouseover="changeImageOpacity(0.5, 'row4')" onmouseout="changeImageOpacity(1, 'row4')" href="may23.html">
+
+                    <img src="../img/35mm/May 2023/May23c/059610010030.webp" class="row4 imageHover" alt="Leaning Tower of Pisa">
+                    <img src="../img/35mm/May 2023/May23c/059610010013.webp" class="row4 imageHover" alt="Greenwich">
+                    <img src="../img/35mm/May 2023/May23c/059610010019.webp" class="row4 imageHover" alt="Picture of a couple in Italy">
+                    <img src="../img/35mm/May 2023/May23c/059610010024.webp" class="row4 imageHover" alt="Street alleyway in Sienna">
+                    <img src="../img/35mm/May 2023/May23c/059610010027.webp" class="row4 imageHover" alt="Gathering on the street in Sienna">
+                    <img src="../img/35mm/May 2023/May23c/059610010005.webp" class="row4 imageHover" alt="Shushing the camera on Quiet Street">
+                </a>
+                </div>
+                <div class="columnGallery">
+                    <a onmouseover="changeImageOpacity(0.5, 'row1')" onmouseout="changeImageOpacity(1, 'row1')" href="aug23.html">
+                        <img src="../img/35mm/aug 23/Aug23/aug23c/063800010030~2.webp" class="row1 imageHover" alt="Mirky image of the summit of Mount Snowden">
+                        <img src="../img/35mm/aug 23/Aug23/aug23c/Untitled-1.webp" class="row1 imageHover" alt="The Village in Portmeirion">
+                        <img src="../img/35mm/aug 23/Aug23/aug23c/063800010013.webp" class="row1 imageHover" alt="Picture of me in Portmeirion">
+                        <img src="../img/35mm/aug 23/Aug23/aug23c/063800010023.webp" class="row1 imageHover" alt="Llanfairpwllgwyngyll train station">
+                        <img src="../img/35mm/aug 23/Aug23/aug23c/063800010029.webp" class="row1 imageHover" alt="Mount Snowden hills">
+                        <img src="../img/35mm/aug 23/Aug23/aug23c/Untitled-2.webp" class="row1 imageHover" alt="Portmeirion Village">
+                        <img src="../img/35mm/aug 23/Aug23/aug23c/063800010034.webp" class="row1 imageHover" alt="Me in Portmeirion">
+                    </a>
+
+                </div>
+
+
+
+              </div>
+ 
+    
+    </div>
+
+<br>
+
+
+</body>
+
+</html>
