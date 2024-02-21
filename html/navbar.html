@@ -1,11 +1,11 @@
 <script>
   function showMusic() {
 
-      let music = document.getElementById('music');
+      let musicDiv = document.getElementById('musicContainer');
+      musicDiv.innerHTML="<audio controls id='music' class='musicText' style='visibility: hidden; position:relative'><source src='../media/gallery.mp3' type='audio/mpeg'> Your browser does not support the audio element.</audio>";
+      let music = document.getElementById("music")
       music.play();
-      music.style.display="block";
-      let musicText = document.getElementById('musicText');
-      musicText.style.display="none";
+      music.style.visibility="visible";
   }
 
 </script>
@@ -34,11 +34,11 @@
 </div><br>
 <div class = "row">
   <div class="col-3-md">
+    <div id="musicContainer">
       <p id="musicText" onclick="showMusic()">and God said, "let there be music..."</p>
-      <audio controls id="music" class="musicText" style="display: none;">
-          <source src="../media/gallery.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-        </audio>
+
+    </div>
+      
   </div>
 
 </div>
