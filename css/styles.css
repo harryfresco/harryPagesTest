@@ -289,3 +289,12 @@ p{
   .imageHover{
     transition: opacity 0.25s ease-in-out;
   }
+
+  .aboutText{
+    font-family: 'Roboto', sans-serif; font-weight: 100; color:#212529;
+    text-decoration: none;
+    transition: color 0.20s ease-in-out;
+}
+.aboutText:hover{
+    color:rgb(211, 211, 211);
+}
