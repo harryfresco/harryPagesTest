@@ -245,18 +245,10 @@ p{
 }
 
 .rainbowText {
-  font-family: 'Roboto', sans-serif; font-weight: 100; font-size: 20pt;
-    text-decoration: none;
-    transition: color 0.20s ease-in-out;
   background-image: linear-gradient(to left, rgb(211, 181, 211), rgb(172, 154, 186), rgb(156, 156, 241), rgb(107, 156, 107), rgb(213, 213, 119), rgb(239, 216, 174), rgb(253, 139, 139));
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  
-}
-
-.rainbowText:hover{
-  color:rgb(211, 211, 211);
 }
 
 .rowGallery {
@@ -305,8 +297,4 @@ p{
 }
 .aboutText:hover{
     color:rgb(211, 211, 211);
-}
-
-.active{
-  text-decoration: underline !important;
 }
