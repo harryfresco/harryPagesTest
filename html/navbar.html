@@ -19,17 +19,17 @@
       </div>
   </div> -->
   <div class="row">
-    <div class="col-3" style="text-align: center;">
-      <a class="navbarText" href="june22.html">june '22</a>
+    <div class="col-3 nav" style="text-align: center;">
+      <a class="navItem navbarText" href="june22.html">june '22</a>
     </div>
-    <div class="col-3" style="text-align: center;">
-      <a class="navbarText" href="jan23.html">jan '23</a>
+    <div class="col-3 nav" style="text-align: center;">
+      <a class="navItem navbarText" href="jan23.html">jan '23</a>
     </div>
-    <div class="col-3 rainbowText" style="text-align: center;">
-      <a class="navbarText rainbowText" href="may23.html">may '23</a>
+    <div class="col-3 nav rainbowText" style="text-align: center;">
+      <a class="navItem rainbowText" href="may23.html">may '23</a>
     </div>
-    <div class="col-3 " style="text-align: center;">
-      <a class="navbarText rainbowText" href="aug23.html">aug '23</a>
+    <div class="col-3 nav " style="text-align: center;">
+      <a class="navItem rainbowText" href="aug23.html">aug '23</a>
     </div>
 </div><br>
 <div class = "row">
@@ -46,3 +46,16 @@
 </div>
 
 <br>
+<script>
+  document.querySelectorAll(".navItem").forEach((linkDiv) => {
+    var path = window.location.pathname;
+    var page = path.split("/").pop();
+    var link = linkDiv.href;
+    var linkPath = link.split("/").pop();
+    if (linkPath == page) {
+      console.log(linkPath)
+        linkDiv.classList.add("active");
+
+    }
+});
+</script>
