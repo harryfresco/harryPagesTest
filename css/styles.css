@@ -1,17 +1,46 @@
+body{
+  background-color: #f7f1de;;
+}
+
+@font-face {
+  font-family: 'Futura PT Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Futura PT Medium'), url('../fonts/futura-pt-cufonfonts-webfont/FuturaCyrillicMedium.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'Futura PT Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Futura PT Light'), url('../fonts/futura-pt-cufonfonts-webfont/FuturaCyrillicLight.woff') format('woff');
+    }
 .galleryTitle{
-    font-family: 'Roboto', sans-serif; font-weight: 200; color:rgb(68, 68, 68); font-size: 25pt;
+  font-family: 'Futura PT Light',"Trebuchet MS", Arial, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 55px;
+  letter-spacing: 2px;
     text-align: right;
     text-decoration: none;
     transition: color 0.20s ease-in-out;
 }
 .galleryDesc{
-    font-family: 'Roboto', sans-serif; font-weight: 100; color:rgb(141, 141, 141); font-size: 13pt;
+  font-family: 'Futura PT Light',"Trebuchet MS", Arial, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 20px;
+  letter-spacing: 2px;
     text-align: right;
     text-decoration: none;
     transition: color 0.20s ease-in-out;
 }
 .navbarText{
-    font-family: 'Roboto', sans-serif; font-weight: 100; color:rgb(160, 160, 160); font-size: 20pt;
+    font-family: 'Futura PT Light',"Trebuchet MS", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  letter-spacing: 2px;
+  color: black;
     text-decoration: none;
     transition: color 0.20s ease-in-out;
 }
@@ -39,7 +68,12 @@
 
 }
 .footerRight{
-    font-family: 'Roboto', sans-serif; font-weight: 100; color:rgb(160, 160, 160); font-size: 15pt;
+  font-family: 'Futura PT Light',"Trebuchet MS", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+  letter-spacing: 2px;
+  color: black;
     text-decoration: none;
     transition: color 0.20s ease-in-out;
     position: fixed;
@@ -50,7 +84,12 @@
 }
 
 .footerLeft{
-    font-family: 'Roboto', sans-serif; font-weight: 100; color:rgb(160, 160, 160); font-size: 15pt;
+  font-family: 'Futura PT Light',"Trebuchet MS", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+  letter-spacing: 2px;
+  color: black;
     text-decoration: none;
     transition: color 0.20s ease-in-out;
     position: fixed;
@@ -61,7 +100,12 @@
 }
 
 .footerCentre{
-    font-family: 'Roboto', sans-serif; font-weight: 100; color:rgb(160, 160, 160); font-size: 11pt;
+  font-family: 'Futura PT Light',"Trebuchet MS", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+  letter-spacing: 2px;
+  color: black;
     text-decoration: none;
     transition: color 0.20s ease-in-out;
     position: fixed;
@@ -123,7 +167,6 @@
 
 }
 #musicText{
-    font-style: italic;
 
 
 }
@@ -142,9 +185,11 @@
   cursor: pointer;
   display: inline-flex;
   fill: currentcolor;
-  font-family: "Google Sans",Roboto,Arial,sans-serif;
-  font-size: 14px;
-  font-weight: 500;
+  font-family: 'Futura PT Light',"Trebuchet MS", Arial, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 16px;
+  letter-spacing: 2px;
   height: 48px;
   justify-content: center;
   letter-spacing: .25px;
@@ -214,7 +259,12 @@
     transform: translate(-50%, -50%);
 }
 .frontCTA{
-    font-family: 'Roboto', sans-serif; font-weight: 100; color: white; font-size: 30pt;
+  font-family: 'Futura PT Light',"Trebuchet MS", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 55px;
+  letter-spacing: 2px;
+  color: white;
     text-decoration: none;
 }
 /* unvisited link */
@@ -291,10 +341,22 @@ p{
   }
 
   .aboutText{
-    font-family: 'Roboto', sans-serif; font-weight: 100; color:#212529;
+    font-family: 'Futura PT Medium',"Trebuchet MS", Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color:#212529;
     text-decoration: none;
     transition: color 0.20s ease-in-out;
 }
-.aboutText:hover{
-    color:rgb(211, 211, 211);
+
+.newButton{
+  padding: 21px 34px;
+ font-family: 'Futura PT Medium',"Trebuchet MS", Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    letter-spacing: 1px;
+color: black;
 }
