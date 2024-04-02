@@ -26,15 +26,87 @@
 
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
- <div id="nav-placeholder">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+  function showMusic() {
+
+      let musicDiv = document.getElementById('musicContainer');
+      musicDiv.innerHTML="<audio controls id='music' class='musicText' style='visibility: hidden; position:relative'><source src='../media/gallery.mp3' type='audio/mpeg'> Your browser does not support the audio element.</audio>";
+      let music = document.getElementById("music")
+      music.play();
+      music.style.visibility="visible";
+  }
+
+</script>
+<!-- Simulate a smartphone / tablet -->
+
+
+  <!-- Top Navigation Menu -->
+  <div class="topnav">
+    <a class="active navbarText" id="title">jan '23</a>
+    <div id="myLinks">
+      <a class="navbarText" href="june22.html">june '22</a>
+      <a class="navbarText" href="jan23.html" style="display: none;">jan '23</a>
+      <a class="navbarText rainbowText" href="may23.html">may '23</a>
+      <a class="navbarText rainbowText" href="aug23.html">aug '23</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+<div class="container text-center">
+
+<br>
+<!--   <div class="row justify-content-md-center">
+      <div class="col-12" style="text-align: center;">
+        <a class="navbarText" href="">all photos</a>
+      </div>
+  </div> -->
+  <div class="row desktopNav">
+    <div class="col-3" style="text-align: center;">
+      <a class="navbarText" href="june22.html">june '22</a>
+    </div>
+    <div class="col-3" style="text-align: center;">
+      <a class="navbarText" href="jan23.html">jan '23</a>
+    </div>
+    <div class="col-3 rainbowText" style="text-align: center;">
+      <a class="navbarText rainbowText" href="may23.html">may '23</a>
+    </div>
+    <div class="col-3 " style="text-align: center;">
+      <a class="navbarText rainbowText" href="aug23.html">aug '23</a>
+    </div>
+</div><br>
+<div class = "row">
+  <div class="col-3-md">
+    <div id="musicContainer">
+      <h1 class="newButton" id="musicText" onclick="showMusic()">click here for music</button>
 
     </div>
       
-    <script>
+  </div>
+
+</div>
+
+</div>
+
   
-        $("#nav-placeholder").load("navbar.html");
-     
-    </script>
+  
+  <!-- End smartphone / tablet look -->
+
+  
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+  </script>
+
 
     <div class="container">
         <div class="row">
@@ -128,11 +200,10 @@
    
       
     <script>
-  
-        $("#footer-placeholder").load("footer.html");
-     
-    </script>
 
+        $("#footer-placeholder").load("footer.html");
+
+    </script>
 </body>
 
 </html>

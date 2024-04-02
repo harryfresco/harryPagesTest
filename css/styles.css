@@ -403,6 +403,10 @@ color: black;
 .desktopNav {
   visibility: visible;
 }
+.mobileTitle{
+  visibility: hidden;
+  display: none;
+}
 @media (max-width: 667px) {
   .topnav {
       visibility: visible;
@@ -415,5 +419,9 @@ color: black;
   .desktopNav {
     visibility: hidden;
     display: none;
+  }
+  .mobileTitle{
+    visibility: visible;
+    display: block;
   }
 }
