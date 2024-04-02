@@ -1,5 +1,5 @@
 body{
-  background-color: #f7f1de;;
+  background-color: #f7f1de;
 }
 
 @font-face {
@@ -359,4 +359,60 @@ p{
     font-size: 15px;
     letter-spacing: 1px;
 color: black;
+}
+
+
+
+
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #949494;
+  position: relative;
+  visibility: hidden;
+  display: none;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: none;
+}
+
+.topnav a.icon {
+  background: #949494;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #949494;
+  color: black;
+}
+
+.desktopNav {
+  visibility: visible;
+}
+@media (max-width: 667px) {
+  .topnav {
+      visibility: visible;
+      display: block;
+  }
+  .topnav a {
+    visibility: visible;
+    display: block;
+}
+  .desktopNav {
+    visibility: hidden;
+    display: none;
+  }
 }

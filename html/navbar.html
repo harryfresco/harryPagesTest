@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script>
   function showMusic() {
 
@@ -9,7 +10,22 @@
   }
 
 </script>
+<!-- Simulate a smartphone / tablet -->
 
+
+  <!-- Top Navigation Menu -->
+  <div class="topnav">
+    <a class="active" style="visibility: hidden;">Harry Fresco</a>
+    <div id="myLinks">
+      <a class="navbarText" href="june22.html">june '22</a>
+      <a class="navbarText" href="jan23.html">jan '23</a>
+      <a class="navbarText rainbowText" href="may23.html">may '23</a>
+      <a class="navbarText rainbowText" href="aug23.html">aug '23</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
 <div class="container text-center">
 
 <br>
@@ -18,7 +34,7 @@
         <a class="navbarText" href="">all photos</a>
       </div>
   </div> -->
-  <div class="row">
+  <div class="row desktopNav">
     <div class="col-3" style="text-align: center;">
       <a class="navbarText" href="june22.html">june '22</a>
     </div>
@@ -45,4 +61,19 @@
 
 </div>
 
+  
+  
+  <!-- End smartphone / tablet look -->
+
+  
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+  </script>
 <br>
