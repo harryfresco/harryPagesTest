@@ -130,6 +130,7 @@ body{
     right: 0;
     transition: opacity 0.25s ease-in-out;
     backface-visibility: hidden;
+    filter: brightness(0.4)
     
 }
 @media (max-width: 667px) {
