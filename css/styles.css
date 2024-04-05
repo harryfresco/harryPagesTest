@@ -303,9 +303,15 @@ p{
 
 .rainbowText {
   background-image: linear-gradient(to left, rgb(211, 181, 211), rgb(172, 154, 186), rgb(156, 156, 241), rgb(107, 156, 107), rgb(213, 213, 119), rgb(239, 216, 174), rgb(253, 139, 139));
-  color: transparent;
+  color: rgba(0, 0, 0, 0.1);
   background-clip: text;
   -webkit-background-clip: text;
+}
+
+.desktopNavActive{
+  font-family: 'Futura PT Medium';
+  text-decoration: underline !important;
+
 }
 
 .rowGallery {
@@ -410,6 +416,7 @@ color: black;
 .desktopNav {
   visibility: visible;
 }
+
 .mobileTitle{
   visibility: hidden;
   display: none;
