@@ -682,6 +682,15 @@ color: black;
 
  
 }
+
+.watchGalleryLink{
+  
+}
+.watchGalleryLink:hover{
+  background-color: #e6e0cc;
+  cursor: pointer;
+    text-decoration: none; 
+}
 @media (max-width: 1000px){
   .watchGalleryContainer{
     width:100%;
