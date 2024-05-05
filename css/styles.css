@@ -684,7 +684,7 @@ color: black;
 }
 
 .watchGalleryLink{
-  
+  padding: 15px;
 }
 .watchGalleryLink:hover{
   background-color: #e6e0cc;
@@ -701,4 +701,5 @@ color: black;
 
 .fullImg{
   width: 100%;
+  padding: 15px;
 }
