@@ -132,6 +132,14 @@ body{
     backface-visibility: hidden;
     
 }
+.backgroundImageChoose {   
+  opacity: 0.8;
+ width: 100%;
+display: block;
+ transition: opacity 0.25s ease-in-out;
+ backface-visibility: hidden;
+ 
+}
 @media (max-width: 667px) {
     .backgroundImage {
         height: 100vh; /* Adjust the width for smaller screens */
@@ -252,9 +260,22 @@ body{
     margin-left: 0;
     transform: translate(-50%, -50%);
 }
+.centreClassChoose{
+  position: relative;
+  top:-50%;
+  left:50%;
+  margin-left: 0;
+  transform: translate(-50%, -50%);
+}
 .centreHorizontal{
   position: absolute;
   left:53%;
+  margin-right:-50%;
+  transform: translate(-50%, 0);
+}
+.centreHorizontalChoose{
+  position: absolute;
+  left:50%;
   margin-right:-50%;
   transform: translate(-50%, 0);
 }
