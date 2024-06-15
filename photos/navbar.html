@@ -15,7 +15,7 @@
 
   <!-- Top Navigation Menu -->
   <div class="topnav">
-    <a class="active" id="title" style="visibility: hidden;">Harry Fresco</a>
+    <a class="active navbarText" id="title" style="visibility: hidden;">Harry Fresco</a>
     <div id="myLinks">
       <a class="navbarText" href="june22.html">june '22</a>
       <a class="navbarText" href="jan23.html">jan '23</a>
@@ -75,5 +75,22 @@
       x.style.display = "block";
     }
   }
+  var path = window.location.pathname;
+    var page = path.split("/").pop();
+    let navLinks = document.querySelectorAll(".navbarText");
+
+    navLinks.forEach(links => {
+      console.log(links)
+      links.classList.remove('active');
+      let actives = document.querySelectorAll('a[href*="' + page + '"]');
+      actives.forEach(each => {
+        each.classList.add('desktopNavActive');
+      })
+    });
+    let title = document.querySelector("#title");
+    console.log(title)
+      title.style.visibility ="visible"
+      title.textContent = document.querySelector('a[href*="' + page + '"]').textContent;
+    
   </script>
 <br>
