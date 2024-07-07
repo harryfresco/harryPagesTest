@@ -1,0 +1,88 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+  function showMusic() {
+
+      let musicDiv = document.getElementById('musicContainer');
+      musicDiv.innerHTML="<audio controls id='music' class='musicText' style='visibility: hidden; position:relative'><source src='../media/gallery.mp3' type='audio/mpeg'> Your browser does not support the audio element.</audio>";
+      let music = document.getElementById("music")
+      music.play();
+      music.style.visibility="visible";
+  }
+
+</script>
+<!-- Simulate a smartphone / tablet -->
+
+
+  <!-- Top Navigation Menu -->
+  <div class="topnav">
+    <a class="active navbarText" id="title" style="visibility: hidden;">Harry Fresco</a>
+    <div id="myLinks">
+      <a class="navbarText" href="wizard.html">wizard</a>
+      <a class="navbarText" href="june24d.html">june 24</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+<div class="container text-center">
+
+<br>
+<!--   <div class="row justify-content-md-center">
+      <div class="col-12" style="text-align: center;">
+        <a class="navbarText" href="">all photos</a>
+      </div>
+  </div> -->
+  <div class="row desktopNav">
+    <div class="col" style="text-align: center;">
+      <a class="navbarText" href="wizard.html">wizard</a>
+    </div>
+    <div class="col" style="text-align: center;">
+      <a class="navbarText" href="june24d.html">june 24</a>
+    </div>
+</div><br>
+<div class = "row">
+  <div class="col-3-md">
+    <div id="musicContainer">
+      <h1 class="newButton" id="musicText" onclick="showMusic()">click here for music</button>
+
+    </div>
+      
+  </div>
+
+</div>
+
+</div>
+
+  
+  
+  <!-- End smartphone / tablet look -->
+
+  
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+  var path = window.location.pathname;
+    var page = path.split("/").pop();
+    let navLinks = document.querySelectorAll(".navbarText");
+
+    navLinks.forEach(links => {
+      console.log(links)
+      links.classList.remove('active');
+      let actives = document.querySelectorAll('a[href*="' + page + '"]');
+      actives.forEach(each => {
+        each.classList.add('desktopNavActive');
+      })
+    });
+    let title = document.querySelector("#title");
+    console.log(title)
+      title.style.visibility ="visible"
+      title.textContent = document.querySelector('a[href*="' + page + '"]').textContent;
+    
+  </script>
+<br>
