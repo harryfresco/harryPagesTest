@@ -44,59 +44,14 @@
   }
 
 </script>
-<!-- Simulate a smartphone / tablet -->
+<div id="navbarPlaceholder">
 
-
-  <!-- Top Navigation Menu -->
-  <div class="topnav">
-    <a class="active navbarText" id="title">gallery</a>
-    <div id="myLinks">
-      <a class="navbarText" href="june22.html">june '22</a>
-      <a class="navbarText" href="jan23.html">jan '23</a>
-      <a class="navbarText rainbowText" href="may23.html">may '23</a>
-      <a class="navbarText rainbowText" href="aug23.html">aug '23</a>
-    </div>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-<div class="container text-center desktopNav">
-
+</div>
 <br>
-<!--   <div class="row justify-content-md-center">
-      <div class="col-12" style="text-align: center;">
-        <a class="navbarText" href="">all photos</a>
-      </div>
-  </div> -->
-  <div class="row">
-    <div class="col-3" style="text-align: center;">
-      <a class="navbarText" href="june22.html">june '22</a>
-    </div>
-    <div class="col-3" style="text-align: center;">
-      <a class="navbarText" href="jan23.html">jan '23</a>
-    </div>
-    <div class="col-3 rainbowText" style="text-align: center;">
-      <a class="navbarText rainbowText" href="may23.html">may '23</a>
-    </div>
-    <div class="col-3 " style="text-align: center;">
-      <a class="navbarText rainbowText" href="aug23.html">aug '23</a>
-    </div>
-</div><br>
 
 
 </div>
-<div class="container text-center">
-  <div class = "row">
-    <div class="col-3-md">
-      <div id="musicContainer">
-        <h1 class="newButton" id="musicText" onclick="showMusic()">click here for music</button>
-  
-      </div>
-        
-    </div>
-  
-  </div>
-</div>
+
   
   
   <!-- End smartphone / tablet look -->
@@ -176,7 +131,19 @@
                     </a>
 
                 </div>
+                <div class="columnGallery">
+                  <a onmouseover="changeImageOpacity(0.5, 'row0')" onmouseout="changeImageOpacity(1, 'row0')" href="june24.html">
+                      <img src="../img/35mm/june 24/compressed/000255050003.webp" class="row0 imageHover" alt="Mirky image of the summit of Mount Snowden">
+                      <img src="../img/35mm/june 24/compressed/Untitled-1 (1).webp" class="row0 imageHover" alt="The Village in Portmeirion">
+                      <img src="../img/35mm/june 24/compressed/000255050014.webp" class="row0 imageHover" alt="Picture of me in Portmeirion">
+                      <img src="../img/35mm/june 24/compressed/000255050017.webp" class="row0 imageHover" alt="Llanfairpwllgwyngyll train station">
+                      <img src="../img/35mm/aug 23/Aug23/aug23c/063800010029.webp" class="row0 imageHover" alt="Mount Snowden hills">
+                      <img src="../img/35mm/june 24/compressed/000255050001.webp" class="row0 imageHover" alt="Portmeirion Village">
+                      <img src="../img/35mm/june 24/compressed/000255050009.webp" class="row0 imageHover" alt="Me in Portmeirion">
+                      <img src="../img/35mm/june 24/000255050024.webp" class="row0 imageHover" alt="Me in Portmeirion">
+                  </a>
 
+              </div>
 
 
               </div>
@@ -186,7 +153,9 @@
 
 <br>
 
-
+<script>
+  $("#navbarPlaceholder").load("navbar.html");
+</script>
 </body>
 
 </html>
