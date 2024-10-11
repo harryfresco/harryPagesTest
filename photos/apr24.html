@@ -24,6 +24,11 @@
 </head>
 
 <body>
+  <div id="fullscreen" class="fullscreen">
+    <div id="loading" class="loader centreClass">
+
+    </div>
+</div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
 
@@ -111,7 +116,7 @@ function showMusic() {
     }
   }
   </script>
-    <div class="container">
+    <div class="container affectedByLoad">
         <div class="row">
             <h1 class="galleryTitle">the move to bristol.</h1>
             <p class="galleryDesc">i had a wacky film this time, Kiro 400 - again, snappy snaps ruined the scans first time round</p>
@@ -205,7 +210,10 @@ function showMusic() {
    
       
     <script>
-  
+      $(window).on('load', function(){
+      $('#loading').hide();
+      $('#fullscreen').hide();
+    })
         $("#footer-placeholder").load("footer.html");
      
     </script>

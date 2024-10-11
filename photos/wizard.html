@@ -24,6 +24,11 @@
 </head>
 
 <body>
+  <div id="fullscreen" class="fullscreen">
+    <div id="loading" class="loader centreClass">
+
+    </div>
+</div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
@@ -63,7 +68,7 @@
   }
   </script>
 
-    <div class="container">
+    <div class="container affectedByLoad">
         <div class="row">
             <h1 class="galleryTitle">wizard release party 7/6/2024.</h1>
             <p class="galleryDesc">first day with the fujifilm x-t20 with the 27mm 'pancake lens' <br> an amazing day for the release of Les Joy's single 'Wizard', and also a showcase for other great musicians. <br> go <a href="https://www.instagram.com/lesjoymusic/">follow</a> and listen to Les Joy NOW!</p>
@@ -128,7 +133,10 @@
    
       
     <script>
-  
+      $(window).on('load', function(){
+      $('#loading').hide();
+      $('#fullscreen').hide();
+    })
         $("#footer-placeholder").load("footer.html");
         $("#navbarPlaceholder").load("navbardigital.html");
     </script>

@@ -30,6 +30,11 @@
 </head>
 
 <body>
+    <div id="fullscreen" class="fullscreen">
+        <div id="loading" class="loader centreClass">
+    
+        </div>
+    </div>
     <!-- meta, image compression (webp) -->
     <!--     <div id="nav-placeholder">
 
@@ -58,7 +63,7 @@
                 });
         */
     </script>
-    <div class="container">
+    <div class="container affectedByLoad" style="position: inherit;">
         <div class="row centreClass">
 
             <div class="col-lg-6">
@@ -109,7 +114,12 @@
 
     </div>
 
-
+<script>
+        $(window).on('load', function(){
+      $('#loading').hide();
+      $('#fullscreen').hide();
+    })
+</script>
 </body>
 
 </html>
