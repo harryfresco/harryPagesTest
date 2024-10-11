@@ -92,7 +92,7 @@
             <div class="carousel-inner">
 
               <div class="carousel-item active">
-                <img src="../img/digital/japan/DSCF1865-2.webp" class="d-block w-100" alt="miyajima island">
+                <img id="firstImg" src="../img/digital/japan/DSCF1865-2.webp" class="d-block w-100" alt="miyajima island">
                 <div class="carousel-caption d-none d-md-block">
                   <h5>miyajima island</h5>
                 </div>
@@ -192,7 +192,7 @@
    
       
     <script>
-      $(window).on('load', function(){
+      $('#firstImg').on('load', function(){
       $('#loading').hide();
       $('#fullscreen').hide();
     })
