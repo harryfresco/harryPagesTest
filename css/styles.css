@@ -877,3 +877,16 @@ color: black;
   bottom: 30px;
   transform: rotate(-225deg);
 }
+
+.portrait50{
+  width: 50%;
+  transform: translateX(50%)
+}
+
+
+@media (max-width: 1000px){
+  .portrait50{
+    width: 80%;
+    transform: translateX(12%)
+  }
+}
