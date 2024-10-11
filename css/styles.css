@@ -927,8 +927,3 @@ color: black;
   opacity: 70%;
   
 }
-@media screen and (max-width: 600px) {
-.loader{display: none; visibility: hidden;}
-.fullscreen{display: none; visibility: hidden;}
-
-}
