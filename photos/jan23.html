@@ -87,7 +87,7 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="../img/35mm/Jan 2023/Jan23c/img0000.webp" class="d-block w-100" alt="Battersea Park statues">
+                <img id="firstImg" src="../img/35mm/Jan 2023/Jan23c/img0000.webp" class="d-block w-100" alt="Battersea Park statues">
                 <div class="carousel-caption d-none d-md-block">
                   <h5>it's the mr bean episode!</h5>
                   <p style="color: aliceblue;">you know that bit in mr bean where his camera gets stolen? Yeah, this is it</p>
@@ -161,7 +161,7 @@
    
       
     <script>
-    $(window).on('load', function(){
+    $('#firstImg').on('load', function(){
       $('#loading').hide();
       $('#fullscreen').hide();
     })

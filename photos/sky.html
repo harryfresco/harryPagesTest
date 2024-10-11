@@ -84,7 +84,7 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="../img/digital/sky/northernlightnb.webp" class="d-block portrait50" alt="northern lights">
+          <img id="firstImg" src="../img/digital/sky/northernlightnb.webp" class="d-block portrait50" alt="northern lights">
           <div class="carousel-caption d-none d-md-block">
             
           </div>
@@ -134,7 +134,7 @@
    
       
     <script>
-    $(window).on('load', function(){
+    $('#firstImg').on('load', function(){
       $('#loading').hide();
       $('#fullscreen').hide();
     })

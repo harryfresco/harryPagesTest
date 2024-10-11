@@ -83,7 +83,7 @@ function showMusic() {
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="../img/35mm/june 24/compressed/000255050003.webp" class="d-block w-100" alt="Clifton suspension bridge">
+                <img id="firstImg" src="../img/35mm/june 24/compressed/000255050003.webp" class="d-block w-100" alt="Clifton suspension bridge">
                 <div class="carousel-caption d-none d-md-block">
                   <h5>clifton suspension bridge</h5>
                   <p style="color: aliceblue;">i was going to take a picture of an old couple here, but i ran out of film</p>
@@ -164,7 +164,7 @@ function showMusic() {
    
       
     <script>
-      $(window).on('load', function(){
+      $('#firstImg').on('load', function(){
       $('#loading').hide();
       $('#fullscreen').hide();
     })

@@ -86,7 +86,7 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="../img/digital/june24/2024_0705_12485500.webp" class="d-block w-100" alt="cheddar gorge">
+          <img id="firstImg" src="../img/digital/june24/2024_0705_12485500.webp" class="d-block w-100" alt="cheddar gorge">
           <div class="carousel-caption d-none d-md-block">
             <h5>cheddar gorge</h5>
             <p style="color: white;">had to squat in a damp cave for this shot</p>
@@ -153,7 +153,7 @@
    
       
     <script>
-      $(window).on('load', function(){
+      $('#firstImg').on('load', function(){
       $('#loading').hide();
       $('#fullscreen').hide();
     })

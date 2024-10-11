@@ -87,7 +87,7 @@
             <div class="carousel-inner">
 
               <div class="carousel-item active">
-                <img src="../img/digital/wizard/2024-0607-21435400-66658f3fde510.webp" class="d-block w-100" alt="wizard set">
+                <img id="firstImg" src="../img/digital/wizard/2024-0607-21435400-66658f3fde510.webp" class="d-block w-100" alt="wizard set">
               </div>              
               <div class="carousel-item">
                 <img src="../img/digital/wizard/2024-0608-01275500-66658f51083d5.webp" class="d-block w-100" alt="les joy">
@@ -133,7 +133,7 @@
    
       
     <script>
-      $(window).on('load', function(){
+      $('#firstImg').on('load', function(){
       $('#loading').hide();
       $('#fullscreen').hide();
     })
